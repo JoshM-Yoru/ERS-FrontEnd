@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import './Forms.css'
 
 const Register = () => {
 
@@ -7,7 +8,7 @@ const Register = () => {
     const emailRef = useRef<HTMLInputElement>(null);
     const passwordRef = useRef<HTMLInputElement>(null);
 
-    const handleLoginFormSubmit = () => {
+    const handleRegisterFormSubmit = () => {
         console.log(emailRef.current?.value, passwordRef.current?.value);
     }
 
@@ -30,7 +31,7 @@ const Register = () => {
                     ref={passwordRef}
                 />
                 <div className='spacer' />
-                <button onClick={handleLoginFormSubmit} value="Log In" >Log In</button>
+                <button onClick={handleRegisterFormSubmit} value="Log In" >Log In</button>
             </div>
         </div>
     )
