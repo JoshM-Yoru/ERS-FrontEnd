@@ -6,7 +6,7 @@ const Login = () => {
     const emailRef = useRef<HTMLInputElement>(null);
     const passwordRef = useRef<HTMLInputElement>(null);
 
-    export const handleLoginFormSubmit = () => {
+    const handleLoginFormSubmit = () => {
         console.log(emailRef.current?.value, passwordRef.current?.value);
     }
 

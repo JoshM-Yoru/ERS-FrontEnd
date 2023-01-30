@@ -18,8 +18,10 @@ const Register = () => {
             <div className='form'>
                 <label htmlFor="firstName">First Name</label>
                 <input ref={firstNameRef} type="text" name="firstName" id="firstName" />
+                <div className='spacer' />
                 <label htmlFor="lastName">Last Name</label>
                 <input ref={lastNameRef} type="text" name="lastName" id="lastName" />
+                <div className='spacer' />
                 <label htmlFor="email">Email</label>
                 <input ref={emailRef} type="text" name="email" id="email" />
                 <div className='spacer' />
